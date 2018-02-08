@@ -31,6 +31,7 @@ export default Ember.Component.extend({
   createImageThumbnails: null,
 
   // resize: not available
+  resizeHeight: null,
   acceptedFiles: null,
   autoProcessQueue: null,
   forceFallback: null,
@@ -179,6 +180,7 @@ export default Ember.Component.extend({
       autoProcessQueue: this.autoProcessQueue,
       forceFallback: this.forceFallback,
       previewTemplate: this.previewTemplate,
+      resizeHeight: this.resizeHeight,
 
       // Dropzone translations
       dictDefaultMessage: this.dictDefaultMessage,
